@@ -5,7 +5,7 @@
   <title>Meme soundboard</title>
   <meta name="description" content="Meme soundboard">
   <meta name="author" content="Niki Ahlskog">
-  <meta name="viewport" content="user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
   <link rel="stylesheet" href="style.css?v=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -17,42 +17,49 @@
 
   <!-- Photo Grid -->
   <div class="row">
-    <div class="column">
-      <div class="img-text"><h1>No vittu mieti</h1></div>
-      <img src="images/novittumieti.png" alt="no vittu mieti" class="img-fluid">
+    <div class="column" data-audio="novittumieti">
+      <div class="img-text"><h1 draggable="false">No vittu mieti</h1></div>
+      <img src="images/novittumieti.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="novittumieti">
     </div>
-    <div class="column">
-      <div class="img-text"><h1>Se oli tonnin seteli</h1></div>
-      <img src="images/novittumieti.png" alt="no vittu mieti" class="img-fluid">
+    <div class="column" data-audio="tonninseteli">
+      <div class="img-text"><h1>Mä annoin sulle tonnin setelin</h1></div>
+      <img src="images/tonninseteli.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="tonninseteli">
     </div>
-    <div class="column">
-      <div class="img-text"><h1>Me ollaan hävitty tää peli</h1></div>
-      <img src="images/novittumieti.png" alt="no vittu mieti" class="img-fluid">
+    <div class="column" data-audio="tuhanteen">
+      <div class="img-text"><h1>Ja tuhanteen</h1></div>
+      <img src="images/tuhanteen.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="tuhanteen">
     </div>
-    <div class="column">
-      <div class="img-text"><h1>Kahen kilon siika</h1></div>
-      <img src="images/tonninseteli.png" alt="no vittu mieti" class="img-fluid">
+    <div class="column" data-audio="havittypeli">
+      <div class="img-text"><h1>Me on hävitty tää peli</h1></div>
+      <img src="images/havittypeli.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="havittypeli">
     </div>
   </div>
+
   <div class="row">
-  <div class="column">
-    <div class="img-text"><h1>No vittu mieti</h1></div>
-    <img src="images/novittumieti.png" alt="no vittu mieti" class="img-fluid">
+  <div class="column" data-audio="mitavittua">
+    <div class="img-text"><h1 draggable="false">Mitä vittua täällä tapahtuu</h1></div>
+    <img src="images/mitavittua.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="mitavittua">
   </div>
-  <div class="column">
-    <div class="img-text"><h1>Se oli tonnin seteli</h1></div>
-    <img src="images/novittumieti.png" alt="no vittu mieti" class="img-fluid">
+  <div class="column" data-audio="tonninseteli">
+    <div class="img-text"><h1>Mä annoin sulle tonnin setelin</h1></div>
+    <img src="images/tonninseteli.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="tonninseteli">
   </div>
-  <div class="column">
-    <div class="img-text"><h1>Me ollaan hävitty tää peli</h1></div>
-    <img src="images/novittumieti.png" alt="no vittu mieti" class="img-fluid">
+  <div class="column" data-audio="tuhanteen">
+    <div class="img-text"><h1>Ja tuhanteen</h1></div>
+    <img src="images/tuhanteen.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="tuhanteen">
   </div>
-  <div class="column">
-    <div class="img-text"><h1>Kahen kilon siika</h1></div>
-    <img src="images/tonninseteli.png" alt="no vittu mieti" class="img-fluid">
+  <div class="column" data-audio="havittypeli">
+    <div class="img-text"><h1>Me on hävitty tää peli</h1></div>
+    <img src="images/havittypeli.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="havittypeli">
   </div>
 </div>
 
+
+<audio data-name="novittumieti" src="sounds/novittumieti.mp3"></audio>
+<audio data-name="tonninseteli" src="sounds/tonninseteli.mp3"></audio>
+<audio data-name="havittypeli" src="sounds/havittypeli.mp3"></audio>
+<audio data-name="tuhanteen" src="sounds/tuhanteen.mp3"></audio>
+<audio data-name="mitavittua" src="sounds/mitavittua.mp3"></audio>
 
   <script src="index.js"></script>
 </body>
