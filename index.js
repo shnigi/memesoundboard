@@ -1,7 +1,7 @@
 const contentDiv = document.getElementById('content');
 const chunks = _.chunk(audioList, 4)
 
-chunks.map(chunk => {
+chunks.map(chunk =>
   contentDiv.innerHTML += `
     <div class="row">
     ${chunk.map(audio => `
@@ -11,8 +11,7 @@ chunks.map(chunk => {
         </div>
       <audio data-name="${audio.audio}" src="sounds/${audio.audio}.mp3"></audio>
       `).join('')}
-    </div>`
-}).join('')
+    </div>`).join('')
 
 const columns = Array.from(document.querySelectorAll('.column'))
 const audios = Array.from(document.getElementsByTagName('audio'))
