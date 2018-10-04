@@ -11,82 +11,14 @@
 </head>
 <body>
   <div class="header">
-    <h1>Meemu soundboard By Niki Ahlskog</h1>
+    <h1>Meemu soundboard</h1>
     <p>Painele kuvia!</p>
   </div>
 
-  <!-- Photo Grid -->
-  <div class="row">
-    <div class="column" data-audio="novittumieti">
-      <div class="img-text"><h1 draggable="false">No vittu mieti</h1></div>
-      <img src="images/novittumieti.png" draggable="false" class="img-fluid" data-name="novittumieti">
-    </div>
-    <div class="column" data-audio="tonninseteli">
-      <div class="img-text"><h1>Mä annoin sulle tonnin setelin</h1></div>
-      <img src="images/tonninseteli.png" draggable="false" class="img-fluid" data-name="tonninseteli">
-    </div>
-    <div class="column" data-audio="tuhanteen">
-      <div class="img-text"><h1>Ja tuhanteen</h1></div>
-      <img src="images/tuhanteen.png" draggable="false" class="img-fluid" data-name="tuhanteen">
-    </div>
-    <div class="column" data-audio="havittypeli">
-      <div class="img-text"><h1>Me on hävitty tää peli</h1></div>
-      <img src="images/havittypeli.png" draggable="false" class="img-fluid" data-name="havittypeli">
-    </div>
-  </div>
+  <div id="content"></div>
 
-  <div class="row">
-  <div class="column" data-audio="mitavittua">
-    <div class="img-text"><h1 draggable="false">Mitä vittua täällä tapahtuu</h1></div>
-    <img src="images/mitavittua.png" draggable="false" class="img-fluid" data-name="mitavittua">
-  </div>
-  <div class="column" data-audio="millanenpaiva">
-    <div class="img-text"><h1>Millanen päivä sulla on huomenna</h1></div>
-    <img src="images/millanenpaiva.png" draggable="false" class="img-fluid" data-name="millanenpaiva">
-  </div>
-  <div class="column" data-audio="jeesus">
-    <div class="img-text"><h1>Älä leiki jeesusta</h1></div>
-    <img src="images/jeesus.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="jeesus">
-  </div>
-  <div class="column" data-audio="rypaleita">
-    <div class="img-text"><h1>Rypäleitä perseessä</h1></div>
-    <img src="images/rypaleita.png" draggable="false" alt="no vittu mieti" class="img-fluid" data-name="rypaleita">
-  </div>
-</div>
-
-<div class="row">
-<div class="column" data-audio="kuumotus">
-  <div class="img-text"><h1 draggable="false">Vittu mikä kuumotus</h1></div>
-  <img src="images/kuumotus.png" draggable="false" class="img-fluid" data-name="kuumotus">
-</div>
-<div class="column" data-audio="toihin">
-  <div class="img-text"><h1>Mee vittu töihin</h1></div>
-  <img src="images/toihin.png" draggable="false" class="img-fluid" data-name="toihin">
-</div>
-<div class="column" data-audio="fiilunkia">
-  <div class="img-text"><h1>Fiilunkipeliä</h1></div>
-  <img src="images/fiilunkia.png" draggable="false" class="img-fluid" data-name="fiilunkia">
-</div>
-<div class="column" data-audio="mursu">
-  <div class="img-text"><h1>Haista sinä mursu paska</h1></div>
-  <img src="images/mursu.png" draggable="false" class="img-fluid" data-name="mursu">
-</div>
-</div>
-
-
-<audio data-name="novittumieti" src="sounds/novittumieti.mp3"></audio>
-<audio data-name="tonninseteli" src="sounds/tonninseteli.mp3"></audio>
-<audio data-name="havittypeli" src="sounds/havittypeli.mp3"></audio>
-<audio data-name="tuhanteen" src="sounds/tuhanteen.mp3"></audio>
-<audio data-name="mitavittua" src="sounds/mitavittua.mp3"></audio>
-<audio data-name="millanenpaiva" src="sounds/millanenpaiva.mp3"></audio>
-<audio data-name="jeesus" src="sounds/jeesus.mp3"></audio>
-<audio data-name="rypaleita" src="sounds/rypaleita.mp3"></audio>
-<audio data-name="kuumotus" src="sounds/kuumotus.mp3"></audio>
-<audio data-name="toihin" src="sounds/toihin.mp3"></audio>
-<audio data-name="fiilunkia" src="sounds/fiilunkia.mp3"></audio>
-<audio data-name="mursu" src="sounds/mursu.mp3"></audio>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+  <script src="sounds.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

@@ -1,3 +1,19 @@
+const contentDiv = document.getElementById('content');
+const chunks = _.chunk(audioList, 4)
+
+chunks.map(chunk => {
+  contentDiv.innerHTML += `
+    <div class="row">
+    ${chunk.map(audio => `
+      <div class="column" data-audio="${audio.audio}">
+        <div class="img-text"><h1 draggable="false">${audio.name}</h1></div>
+        <img src="images/${audio.audio}.png" draggable="false" class="img-fluid" data-name="${audio.audio}">
+        </div>
+      <audio data-name="${audio.audio}" src="sounds/${audio.audio}.mp3"></audio>
+      `).join('')}
+    </div>`
+}).join('')
+
 const columns = Array.from(document.querySelectorAll('.column'))
 const audios = Array.from(document.getElementsByTagName('audio'))
 const images = Array.from(document.querySelectorAll('img'))
