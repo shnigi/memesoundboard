@@ -6,7 +6,7 @@ chunks.map(chunk =>
     <div class="row">
     ${chunk.map(audio => `
       <div class="column" data-audio="${audio.audio}">
-        <div class="img-text"><h1 draggable="false">${audio.name}</h1></div>
+        <div class="img-text"><h1>${audio.name}</h1></div>
         <img src="images/${audio.audio}.png" draggable="false" class="img-fluid" data-name="${audio.audio}">
         </div>
       <audio data-name="${audio.audio}" src="sounds/${audio.audio}.mp3"></audio>
