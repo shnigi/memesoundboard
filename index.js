@@ -1,36 +1,44 @@
-const columns = Array.from(document.querySelectorAll('.column'));
-const audios = document.getElementsByTagName('audio');
-const images = Array.from(document.querySelectorAll('img'));
 
-function checkOtherImagesDoesntHavePlayingClass(e) {
+const columns = Array.from(document.querySelectorAll('.column'))
+const audios = document.getElementsByTagName('audio')
+const images = Array.from(document.querySelectorAll('img'))
+
+function checkOtherImagesDoesntHavePlayingClass({ dataset }) {
   images.forEach(img => {
-    if (img.classList.contains('playing') && e.target.dataset.name !== img.dataset.name) {
-      img.classList.remove('playing');
+    if (
+      img.classList.contains('playing') &&
+      dataset.name !== img.dataset.name
+    ) {
+      img.classList.remove('playing')
     }
-  });
+  })
 }
 
-function playSound(e) {
-  const audio = document.querySelector(`audio[data-name="${e.currentTarget.dataset.audio}"]`);
-  const image = document.querySelector(`img[data-name="${e.currentTarget.dataset.audio}"]`);
-  if (!audio) return;
+function playSound({ currentTarget }) {
+  const wot = currentTarget.dataset.audio
+  const audio = document.querySelector(`audio[data-name="${wot}"]`)
+  const image = document.querySelector(`img[data-name="${wot}"]`)
+  if (!audio) return
 
-  image.classList.add('playing');
-  audio.currentTime = 0;
-  audio.play();
+  image.classList.add('playing')
+  audio.currentTime = 0
+  audio.play()
   audio.onended = () => {
-    image.classList.remove('playing');
-  };
-  checkOtherImagesDoesntHavePlayingClass(e);
+    image.classList.remove('playing')
+  }
+  checkOtherImagesDoesntHavePlayingClass(currentTarget)
 }
 
-document.addEventListener('play', function(e){
-    for(var i = 0, len = audios.length; i < len; i++){
-        if(audios[i] != e.target){
-            audios[i].pause();
-        }
-    }
-}, true);
+document.addEventListener(
+  'play',
+  ({ target }) => {
+    audios.forEach(item => {
+      if (item !== target) {
+        item.pause()
+      }
+    })
+  },
+  true,
+)
 
-
-columns.forEach(column => column.addEventListener('click', playSound));
+columns.forEach(column => column.addEventListener('click', playSound))
