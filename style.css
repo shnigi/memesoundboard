@@ -37,7 +37,6 @@ body {
     padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
@@ -84,7 +83,32 @@ img {
   user-drag: none;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-group button {
+    background-color: #14738c;
+    border: 1px solid #085e74;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    min-width: 200px;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group button:hover {
+    background-color: #0685a7;
+}
+
 @media screen and (max-width: 800px) {
     .column {
         -ms-flex: 50%;
@@ -93,7 +117,6 @@ img {
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
         -ms-flex: 100%;
