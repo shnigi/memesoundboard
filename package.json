@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files '*.css, *.html, *.js'"
+    "start": "http-server -p 3000"
   },
   "author": "Niki Ahlskog",
   "devDependencies": {
-    "browser-sync": "^2.12.5"
+    "http-server": "^0.11.1"
   }
 }
