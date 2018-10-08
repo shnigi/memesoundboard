@@ -83,7 +83,7 @@ const audioList = [{
   "tags": ["kummeli", "asiakunnossa"]
 },
 {
-  "name": "Kuuntele tarkkaa, haista paska!",
+  "name": "Kuuntele tarkkaan, haista paska",
   "audio": "haistapaska",
   "show": "Kummeli",
   "tags": ["kummeli", "haistapaska"]
@@ -93,5 +93,29 @@ const audioList = [{
   "audio": "panee",
   "show": "Kummeli",
   "tags": ["kummeli", "panee"]
-}
+},
+{
+  "name": "Kusipää suutu jo",
+  "audio": "kusipaa",
+  "show": "Random",
+  "tags": ["kusipaa"]
+},
+{
+  "name": "Ennenku taitan jalat poikki",
+  "audio": "jalatpoikki",
+  "show": "Random",
+  "tags": ["jalatpoikki"]
+},
+{
+  "name": "Voi helevetin perse",
+  "audio": "helevetinperse",
+  "show": "Kummeli",
+  "tags": ["kummeli", "voi helevetin perse"]
+},
+{
+  "name": "Ihan vaan lääkkeeksi",
+  "audio": "laakkeeksi",
+  "show": "Random",
+  "tags": ["Uuno turhapuro", "ihan vaan lääkkeeksi"]
+},
 ];
