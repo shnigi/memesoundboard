@@ -9,8 +9,8 @@ let images = undefined
 
 const renderCategoriesButtons = () => {
   categoriesButtonsDiv.innerHTML += `
-  ${categories.map(category => `<button style="width:${100 / categories.length}%">${category}</button>`).join('')}
-  <button style="width:${100 / categories.length}%">Kaikki</button>
+  ${categories.map(category => `<button style="width:${100 / (categories.length + 1)}%">${category}</button>`).join('')}
+  <button style="width:${100 / (categories.length + 1) }%">Kaikki</button>
   `
 }
 renderCategoriesButtons()

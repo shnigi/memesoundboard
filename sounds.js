@@ -69,5 +69,29 @@ const audioList = [{
   "audio": "mursu",
   "show": "Kummeli",
   "tags": ["kummeli", "mursu"]
+},
+{
+  "name": "Noillahan mennään kuuhun asti",
+  "audio": "kuuhun",
+  "show": "Kummeli",
+  "tags": ["kummeli", "kuuhun"]
+},
+{
+  "name": "Asia kunnossa",
+  "audio": "asiakunnossa",
+  "show": "Kummeli",
+  "tags": ["kummeli", "asiakunnossa"]
+},
+{
+  "name": "Kuuntele tarkkaa, haista paska!",
+  "audio": "haistapaska",
+  "show": "Kummeli",
+  "tags": ["kummeli", "haistapaska"]
+},
+{
+  "name": "Panee panee",
+  "audio": "panee",
+  "show": "Kummeli",
+  "tags": ["kummeli", "panee"]
 }
 ];
