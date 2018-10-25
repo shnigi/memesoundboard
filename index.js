@@ -64,23 +64,24 @@ const renderItems = renders => {
   images = Array.from(document.querySelectorAll('img'))
   columns.forEach(column => column.addEventListener('click', playSound))
 }
+let selectedCategory = null
 const filterShowsAndRender = showName => {
-  if (showName === 'Kaikki') {
+  if (showName === 'Kaikki' || selectedCategory === showName) {
     renderItems(_.chunk(audioList, 4))
+    selectedCategory = null
     return
   }
+
+  selectedCategory = showName
   const filteredShow = audioList.filter(audio => audio.show === showName)
   renderItems(_.chunk(filteredShow, 4))
 }
 
 const renderCategoriesButtons = () => {
+  const width = 100 / (categories.length + 1)
   categoriesButtonsDiv.innerHTML += `
   ${categories
-    .map(
-      category =>
-        `<button style="width:${100 /
-          (categories.length + 1)}%">${category}</button>`,
-    )
+    .map(category => `<button style="width: ${width}%">${category}</button>`)
     .join('')}
   <button style="width:${100 / (categories.length + 1)}%">Kaikki</button>
   `
