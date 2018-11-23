@@ -10,7 +10,8 @@
       "singleQuote": true,
       "semi": false,
       "trailingComma": "all"
-    }]
+    }],
+    "linebreak-style": 0
   },
   "globals": {
       "_": true,

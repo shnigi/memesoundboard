@@ -107,15 +107,21 @@ document.addEventListener(
   true,
 )
 
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker
+//     .register('service-worker.js')
+//     .then(registration => {
+//       console.log('Registered:', registration)
+//     })
+//     .catch(error => {
+//       console.log('Registration failed: ', error)
+//     })
+// }
+
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('service-worker.js')
-    .then(registration => {
-      console.log('Registered:', registration)
-    })
-    .catch(error => {
-      console.log('Registration failed: ', error)
-    })
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+  })
 }
 
 renderItems(chunks)
