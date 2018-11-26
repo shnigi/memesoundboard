@@ -2,21 +2,31 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js',
 )
 
+self.addEventListener('install', event => {
+  self.skipWaiting() // Do I need dis?
+})
+
 if (workbox) {
-  workbox.setConfig({ debug: false })
+  // workbox.setConfig({ debug: false })
+  workbox.routing.registerRoute(
+    /.*\.html/,
+    workbox.strategies.staleWhileRevalidate({
+      cacheName: 'html-cache',
+    })
+  )
 
   workbox.routing.registerRoute(
     /.*\.css/,
     workbox.strategies.staleWhileRevalidate({
       cacheName: 'css-cache',
-    }),
+    })
   )
 
   workbox.routing.registerRoute(
     /.*\.js/,
     workbox.strategies.staleWhileRevalidate({
       cacheName: 'js-cache',
-    }),
+    })
   )
 
   workbox.routing.registerRoute(

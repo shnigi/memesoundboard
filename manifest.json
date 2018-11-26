@@ -1,12 +1,13 @@
 {
-  "name": "SuomimeemiSoundBoard",
-  "short_name": "SuomiMemeSB",
+  "name": "SuomiMemeSoundBoard",
+  "short_name": "Memeboard",
   "theme_color": "#1e5799",
   "background_color": "#1e5799",
   "display": "standalone",
   "orientation": "portrait",
   "description": "Suomi Meemi SoundBoard",
-  "start_url": "./index.html",  
+  "start_url": ".",
+  "scope": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
