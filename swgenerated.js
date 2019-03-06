@@ -249,7 +249,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.js",
-    "revision": "fb4b9c4ac93f82903698343e87e2a9d6"
+    "revision": "e82d4cbd22b8ae077d861eaa5a730cac"
   },
   {
     "url": "lodash.js",
@@ -257,7 +257,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "cb34ad3c51ce7710d0703a96ae486267"
+    "revision": "53d1dade6991ca4dd990429f5dd5a40c"
   },
   {
     "url": "package-lock.json",
@@ -265,15 +265,11 @@ self.__precacheManifest = [
   },
   {
     "url": "package.json",
-    "revision": "9426903714b57632074ab3dae34d96e4"
+    "revision": "4bb4a16da641fbef400e8a78aa62fd4f"
   },
   {
     "url": "README.md",
-    "revision": "878fda31fd1c04d17bab09c835312479"
-  },
-  {
-    "url": "service-worker.js",
-    "revision": "83f462adbd66a29c25d5525176a12abf"
+    "revision": "ce3d7e84d6381bbada0ee10b0916e465"
   },
   {
     "url": "sounds.js",
